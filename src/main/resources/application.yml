@@ -1,0 +1,19 @@
+jdbc:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql:localhost:3306///health
+  username: root
+  password: root
+
+spring:
+  profiles:
+    active: abc, def
+
+# 设置日志级别
+logging:
+  level:
+    com.neroxy: debug
+    org.springframework: info
+
+# 修改映射端口
+server:
+  port: 81
