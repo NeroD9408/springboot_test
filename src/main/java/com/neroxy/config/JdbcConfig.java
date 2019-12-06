@@ -1,6 +1,6 @@
 package com.neroxy.config;
 
-import com.alibaba.druid.pool.DruidDataSource;
+//import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -47,10 +47,10 @@ public class JdbcConfig {
     }*/
 
    // 使用第三种方式，声明前缀之后，会自动注入需要的属性。实现的前提是JdbcProperties类中存在对应属性的set方法
-    @Bean
-    @ConfigurationProperties(prefix = "jdbc")
-    public DataSource dataSource() {
-        DruidDataSource dataSource = new DruidDataSource();
-        return dataSource;
-    }
+//    @Bean
+//    @ConfigurationProperties(prefix = "jdbc")
+//    public DataSource dataSource() {
+//        DruidDataSource dataSource = new DruidDataSource();
+//        return dataSource;
+//    }
 }
